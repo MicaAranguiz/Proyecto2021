@@ -1,0 +1,41 @@
+
+<header>
+    <a href="#" class="brand">Brand</a>
+    <div class="menu">
+        <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="#">Home</a>
+        <a href="#">Productos</a>
+        <a href="#">Sucursales</a>
+        <a href="#">Contacto</a>
+    </div>
+    <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+    </div>
+</header>
+
+<div class="separacion">
+
+</div>
+<script type="text/javascript">
+    //java for navigation ban effect on scroll
+    window.addEventListener("scroll",function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky",window.scrollY > 0);
+    });     
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+    menuBtn.addEventListener("click",() => {
+    menu.classList.add("active");
+    });
+    
+    closeBtn.addEventListener("click",() => {
+    menu.classList.remove("active");
+    });
+    
+    </script>
+
+
+

@@ -1,0 +1,16 @@
+ <div class="row p-2">
+    <div class="col-3"  *ngFor="let producto of productos">
+      <div class="card" style="width: 15rem">
+        <img src="{{ producto.url }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ producto.nombre }}</h5>
+          <p class="card-text">
+            {{ producto.descripcion }}      
+          </p>
+           <button class="btn btn-danger" (click)="eliminarProducto(producto.id)"> Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
