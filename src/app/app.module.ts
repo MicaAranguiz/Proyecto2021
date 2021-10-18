@@ -10,13 +10,18 @@ import { ProductosComponent } from './paginas/productos/productos.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule }  from '@angular/fire/compat/database';
 import { environment } from 'src/environments/environment';
+import { ContactoComponent } from './paginas/contacto/contacto.component';
+import { InicioComponent } from './paginas/inicio/inicio.component';
+import {MenuItem} from 'primeng/api';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     FooterComponent,
-    ProductosComponent
+    ProductosComponent,
+    ContactoComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

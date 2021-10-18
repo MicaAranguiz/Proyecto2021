@@ -20,10 +20,11 @@ export class ProductosComponent implements OnInit {
       console.log(this.productos);
     })
     console.log(this.productos)
+
   }
 
   eliminarProducto(id:string){
-    this.productosService.eliminarProducto(id)
+    this.productosService.eliminarProducto(id);
    console.log(this.productos)
   } 
   

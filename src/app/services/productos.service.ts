@@ -33,7 +33,7 @@ export class ProductosService {
 
 
   obtenerProducto(id:string){
-    return this.collecttionProducto.doc(id).get()
+    return this.collecttionProducto.doc(id).snapshotChanges
   }
 
   eliminarProducto(id:string){//el doc busca por el id, en este caso
