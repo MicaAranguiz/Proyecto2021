@@ -1,7 +1,11 @@
 //colocamos lo mismo que tenemos en firebase con un nombre específico
-export interface IProductos{
-    id:string;
-    nombre: string;
-    descripcion:string;
-    url:string;       
+export interface IProductosId extends IProductos {
+  id: string;
+}
+
+export interface IProductos {
+  nombre: string;
+  descripcion: string;
+  url: string;
+  precio: string;
 }

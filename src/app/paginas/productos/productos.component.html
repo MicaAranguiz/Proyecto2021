@@ -1,9 +1,4 @@
 
-
-
-
-
-
 <!-- cards -->
 <div class="container px-4 py-5" id="custom-cards">
   <h2 class="pb-2 border-bottom">Custom cards</h2>
@@ -73,6 +68,8 @@
     </div>
   </div>
 </div>
+
+
   <div class="row p-2">
     <div class="col-3"  *ngFor="let producto of productos">
       <div class="card" style="width: 15rem">
@@ -80,9 +77,15 @@
         <div class="card-body">
           <h5 class="card-title">{{ producto.nombre }}</h5>
           <p class="card-text">
-            {{ producto.descripcion }}      
+            {{ producto.descripcion }}
           </p>
            <button class="btn btn-danger" (click)="eliminarProducto(producto.id)"> Eliminar</button>
+           <div id="liveAlertPlaceholder"></div>
+           <a href="editar">
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Agregar</button>
+           </a>
+
+           <button type="button" class="btn btn-primary" (click)="eliminarProducto(producto.id)" id="liveAlertBtn">Eliminar</button>
         </div>
       </div>
     </div>
@@ -90,19 +93,4 @@
 
 
 
-  
-  <div class="grid">
-    <div class="col">1</div>
-    <div class="col-2">
 
-    </div>    
-    <div class="col">1 </div>
-    <div class="col">1 </div>
-    <div class="col">1 </div>
-    <div class="col">1 </div>
-    <div class="col">1 </div>
-    <div class="col">1 </div>
-    <div class="col">1 </div>
-    <div class="col">1 </div>
-</div>
-  

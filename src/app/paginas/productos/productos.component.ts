@@ -1,3 +1,4 @@
+import { IProductosId } from './../../models/productos.interface';
 import { Component, OnInit } from '@angular/core';
 import { IProductos } from 'src/app/models/productos.interface';
 import { ProductosService } from 'src/app/services/productos.service';
@@ -8,7 +9,7 @@ import { ProductosService } from 'src/app/services/productos.service';
   styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent implements OnInit {
-  public productos!: IProductos[];
+  public productos!: IProductosId[];
 
   constructor(private productosService: ProductosService) {
 
@@ -20,15 +21,16 @@ export class ProductosComponent implements OnInit {
       console.log(this.productos);
     })
     console.log(this.productos)
-
   }
 
   eliminarProducto(id:string){
     this.productosService.eliminarProducto(id);
-   console.log(this.productos)
-  } 
-  
+   console.log(id)
+  }
+
+  editarProducto(){
+
+  }
 
 }
-
 

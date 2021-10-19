@@ -1,0 +1,21 @@
+<div class="container">
+  <form [formGroup]="formulario" (ngSubmit)="enviarDatos()">
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" formControlName='nombre'>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Descripcion</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" formControlName='descripcion'>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Imagen</label>
+    <input type="url" class="form-control" id="exampleInputPassword1" formControlName='url'>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Imagen</label>
+    <input type="url" class="form-control" id="exampleInputPassword1" formControlName='precio'>
+  </div>
+    <button type="submit" class="btn btn-primary" id="liveAlertBtn">Agregar</button>
+</form>
+</div>

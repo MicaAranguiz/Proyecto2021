@@ -1,3 +1,4 @@
+import { IProductosId } from './../models/productos.interface';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IProductos } from '../models/productos.interface';
@@ -8,27 +9,23 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ProductosService {
-  //declaramos 
-  public productos!: Observable<IProductos[]>;
-  public collecttionProducto!: AngularFirestoreCollection<IProductos>;
-  constructor(private firestore: AngularFirestore ) { 
-  this.collecttionProducto = this.firestore.collection<IProductos>("productos");
+  //declaramos
+  public productos!: Observable<IProductosId[]>;
+  public collecttionProducto!: AngularFirestoreCollection<any>;
+  constructor(private firestore: AngularFirestore ) {
+  this.collecttionProducto = this.firestore.collection<IProductosId>("productos");
   this.obtenerProductos();
   }
   public obtenerProductos(){
     this.productos = this.collecttionProducto.snapshotChanges().pipe( //permite que cuando haya cambios recibamos notificaciones
       map(action => action.map (a => {
-        const data = a.payload.doc.data()
+        const data = a.payload.doc.data()as IProductos
         const id = a.payload.doc.id
-        const producto:IProductos = {
-          id : id,
-         nombre: data.nombre,
-          descripcion: data.descripcion,
-          url: data.url
-        }
-        return producto
+
+        return {id, ...data}
       }))
     )
+    return this.productos
   }
 
 

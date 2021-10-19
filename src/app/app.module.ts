@@ -14,7 +14,9 @@ import { ContactoComponent } from './paginas/contacto/contacto.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import {MenuItem} from 'primeng/api';
 import { LoginComponent } from './paginas/login/login.component';
-
+import { EditarComponent } from './paginas/editar/editar.component';
+import { AgregarComponent } from './paginas/agregar/agregar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,14 +25,18 @@ import { LoginComponent } from './paginas/login/login.component';
     ProductosComponent,
     ContactoComponent,
     InicioComponent,
-    LoginComponent
+    LoginComponent,
+    EditarComponent,
+    AgregarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), //inicializamos la base de datos
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
