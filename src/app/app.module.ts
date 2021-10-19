@@ -13,6 +13,7 @@ import { environment } from 'src/environments/environment';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import {MenuItem} from 'primeng/api';
+import { LoginComponent } from './paginas/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MenuItem} from 'primeng/api';
     FooterComponent,
     ProductosComponent,
     ContactoComponent,
-    InicioComponent
+    InicioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
