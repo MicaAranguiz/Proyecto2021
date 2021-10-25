@@ -17,6 +17,10 @@ import { LoginComponent } from './paginas/login/login.component';
 import { EditarComponent } from './paginas/editar/editar.component';
 import { AgregarComponent } from './paginas/agregar/agregar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import {AccordionModule} from 'primeng/accordion';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +40,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AngularFireModule.initializeApp(environment.firebaseConfig), //inicializamos la base de datos
     AngularFireDatabaseModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,    
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

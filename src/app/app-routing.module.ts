@@ -7,6 +7,7 @@ import { FooterComponent } from './paginas/footer/footer.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { MenuComponent } from './paginas/menu/menu.component';
 import { ProductosComponent } from './paginas/productos/productos.component';
+import { LoginComponent} from './paginas/login/login.component'
 
 const routes: Routes = [
   {
@@ -34,6 +35,9 @@ const routes: Routes = [
   },
   {
     path: 'agregar', component:AgregarComponent
+  },
+  {
+    path: 'login', component:LoginComponent
   }
 ];
 
