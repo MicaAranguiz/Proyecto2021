@@ -19,7 +19,7 @@ import { AgregarComponent } from './paginas/agregar/agregar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {AccordionModule} from 'primeng/accordion';
-
+import {GMapModule} from 'primeng/gmap';
 
 @NgModule({
   declarations: [
@@ -40,8 +40,9 @@ import {AccordionModule} from 'primeng/accordion';
     AngularFireModule.initializeApp(environment.firebaseConfig), //inicializamos la base de datos
     AngularFireDatabaseModule,
     ReactiveFormsModule,
-    FormsModule,    
-    AccordionModule
+    FormsModule,
+    AccordionModule,
+    GMapModule
   ],
   providers: [],
   bootstrap: [AppComponent]
