@@ -4,7 +4,10 @@
     background-size:contain;
     background-image: url("https://th.bing.com/th/id/OIP.WwrtFTuPwbsLaTZfvV-9nAHaGN?w=234&h=196&c=7&r=0&o=5&pid=1.7");
 }
-
+#portada{
+  height:500px;
+  width:50%;
+}
 h5{
   font-size: 30px;
   color:black;
@@ -104,9 +107,46 @@ margin-top: 50px;
 transition: all 0.2s ease-in;
 box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
 }
-
-
-
 .card-flyer{
   margin-left:5%;
 }
+
+
+
+/*** ESTILOS BOTÓN SLIDE RIGHT ***/
+.ov-btn-slide-right {
+  background: #fff; /* color de fondo */
+  color: #4741d7; /* color de fuente */
+  border: 2px solid #4741d7; /* tamaño y color de borde */
+  padding: 16px 20px;
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  }
+  .ov-btn-slide-right:hover {
+  color: #fff; /* color de fuente hover */
+  }
+  .ov-btn-slide-right::after {
+  content: "";
+  background: #4741d7; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: -100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  }
+  .ov-btn-slide-right:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  }
