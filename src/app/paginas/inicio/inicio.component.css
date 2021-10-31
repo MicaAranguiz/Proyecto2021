@@ -17,8 +17,12 @@ p{
   color:black;
 }
 .carousel-inner{
-  height:500px !important;
+  height:580px !important;
  }
+ h1{
+font-size:30px;
+text-align: center;   
+}
 
  .titulosecciones{
    background-color: rgb(132, 138, 136);
@@ -84,7 +88,7 @@ border-radius: 5px;
 -moz-transition:all .9s ease;
 -o-transition:all .9s ease;
 -ms-transition:all .9s ease;
-width: 100%;
+width: 70%;
 height: 350px;
 object-fit: contain;
 }
@@ -111,42 +115,63 @@ box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
   margin-left:5%;
 }
 
+/* 
+//boton de llevame allá */
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/*** ESTILOS BOTÓN SLIDE RIGHT ***/
-.ov-btn-slide-right {
-  background: #fff; /* color de fondo */
-  color: #4741d7; /* color de fuente */
-  border: 2px solid #4741d7; /* tamaño y color de borde */
-  padding: 16px 20px;
-  border-radius: 3px; /* redondear bordes */
+.cta {
   position: relative;
-  z-index: 1;
-  overflow: hidden;
-  display: inline-block;
-  }
-  .ov-btn-slide-right:hover {
-  color: #fff; /* color de fuente hover */
-  }
-  .ov-btn-slide-right::after {
+  margin: auto;
+  padding: 20px 60px;
+  transition: all 0.2s ease;
+}
+.cta:before {
   content: "";
-  background: #4741d7; /* color de fondo hover */
   position: absolute;
-  z-index: -1;
-  padding: 16px 20px;
-  display: block;
   top: 0;
-  bottom: 0;
-  left: 100%;
-  right: -100%;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-  }
-  .ov-btn-slide-right:hover::after {
   left: 0;
-  right: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgb(192, 192, 197);
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
   top: 0;
-  bottom: 0;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-  }
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: #6d6d6d;
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+.botonredirige{
+  margin-top:5%;
+}

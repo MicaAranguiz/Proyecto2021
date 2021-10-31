@@ -16,6 +16,7 @@ export class AgregarComponent implements OnInit {
     this.formulario = formB.group({
       nombre: ['', Validators.required],
       descripcion: ['', Validators.required],
+      numero: ['',Validators.required],
       url: ['', Validators.required],
       precio: ['',Validators.required],
     })
@@ -28,8 +29,10 @@ export class AgregarComponent implements OnInit {
     const producto:IProductos = {
       nombre : this.formulario.value.nombre,
       descripcion: this.formulario.value.descripcion,
+      numero:this.formulario.value.numero,
       url : this.formulario.value.url,
       precio: this.formulario.value.precio,
+     
     }
     this.firestore.agregarProducto(producto)
   }

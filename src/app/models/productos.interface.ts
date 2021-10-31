@@ -8,4 +8,5 @@ export interface IProductos {
   descripcion: string;
   url: string;
   precio: string;
+  numero:string;
 }
