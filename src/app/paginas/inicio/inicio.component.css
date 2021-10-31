@@ -175,3 +175,61 @@ a {
 .botonredirige{
   margin-top:5%;
 }
+
+/* medios de pago */
+
+#footer .block, .block.column_block {
+  margin-bottom: 1
+rem
+;
+}
+#footer .block {
+  margin-top: 1
+rem
+;
+}
+#easycontent_83 {
+  margin-bottom: 0
+px
+;
+}
+#easycontent_83 {
+  margin-top: 0
+px
+;
+}
+#easycontent_83 {
+  background-color: #929292;
+}
+.block {
+  margin-bottom: 2.375
+rem
+;
+}
+ 
+article, aside, footer, header, nav, section {
+  display: block;
+
+}
+*, :after, :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+user agent stylesheet
+section {
+  display: block;
+}
+
+*, :after, :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+*, :after, :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+#easycontent_83{
+  width:100%;
+  text-align: center;
+}
+
