@@ -7,6 +7,9 @@
     margin-top: 0rem!important;
     margin-bottom: 0.1rem!important;
 }
+.ms-3{
+  margin-left:10px;
+}
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -28,9 +31,9 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 .margenderecho{
- margin-left:35%;
-
- margin-bottom: 2%;
+ margin-left:38%;
+margin-bottom: 10px;
+ display: flex; 
 }
 .container{
   width:50%;
@@ -74,6 +77,8 @@ ul {
   .menu a:hover::before {
     transform: scaleX(1);
   }
-
+.nav-item{
+  margin-left: 50px;
+}
 
   

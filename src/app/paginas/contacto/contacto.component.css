@@ -11,15 +11,14 @@ h1{
 img{
   width:700px;
 }
-.separador{
-  background-color: aqua;
-  height:50px;
-  font-size: 30px;
-  color:black;
-  text-align: center;
-  margin:3%;
-}
 
+.categorias{
+  margin-left: 38%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: 1000;
+  font-size: 40px;
+}
 
  
 .bg-secondary {

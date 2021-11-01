@@ -23,15 +23,14 @@ p{
 font-size:30px;
 text-align: center;   
 }
+.categorias{
+  margin-left: 38%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: 1000;
+  font-size: 40px;
+}
 
- .titulosecciones{
-   background-color: rgb(132, 138, 136);
-   text-align: center;
-   font-size: large;
-   color:black;
-   margin-top:3%;
-   width:100%;
- }
  *{
   font-family:Georgia, Times, 'Times New Roman', serif;
 }
@@ -115,8 +114,7 @@ box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
   margin-left:5%;
 }
 
-/* 
-//boton de llevame allá */
+/* //boton de llevame allá */
 
 a {
   text-decoration: none;
@@ -166,12 +164,7 @@ a {
   width: 100%;
   background: #6d6d6d;
 }
-.cta:hover svg {
-  transform: translateX(0);
-}
-.cta:active {
-  transform: scale(0.96);
-}
+
 .botonredirige{
   margin-top:5%;
 }
@@ -179,57 +172,26 @@ a {
 /* medios de pago */
 
 #footer .block, .block.column_block {
-  margin-bottom: 1
-rem
-;
-}
-#footer .block {
-  margin-top: 1
-rem
-;
-}
-#easycontent_83 {
-  margin-bottom: 0
-px
-;
-}
-#easycontent_83 {
-  margin-top: 0
-px
+  margin-bottom: 1rem
 ;
 }
 #easycontent_83 {
   background-color: #929292;
 }
-.block {
-  margin-bottom: 2.375
-rem
-;
-}
- 
-article, aside, footer, header, nav, section {
-  display: block;
 
-}
-*, :after, :before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-user agent stylesheet
-section {
-  display: block;
-}
-
-*, :after, :before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-*, :after, :before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
 #easycontent_83{
   width:100%;
   text-align: center;
 }
 
+/* fin */
+
+
+#redessociales{
+  margin-left: 25%;
+  font-size: 90px;
+}
+#botonredes{
+  margin-left: 45%;
+  font-size: 30px;
+}
