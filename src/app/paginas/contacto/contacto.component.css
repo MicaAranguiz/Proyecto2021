@@ -8,10 +8,11 @@
 h1{
   text-align: center;
 }
-img{
-  width:700px;
-}
 
+#principal{
+margin:  auto;
+display: block;
+}
 .categorias{
   margin-left: 38%;
   margin-top: 2%;
@@ -20,7 +21,7 @@ img{
   font-size: 40px;
 }
 
- 
+
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color:   rgb(45, 141, 219)(var(--bs-secondary-rgb),var(--bs-bg-opacity))!important;

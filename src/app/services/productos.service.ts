@@ -1,3 +1,4 @@
+import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { IProductosId } from './../models/productos.interface';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -12,7 +13,8 @@ export class ProductosService {
   //declaramos
   public productos!: Observable<IProductosId[]>;
   public collecttionProducto!: AngularFirestoreCollection<any>;
-  constructor(private firestore: AngularFirestore ) {
+  filePath: string = "";
+  constructor(private firestore: AngularFirestore, private storage : AngularFireStorage ) {
   this.collecttionProducto = this.firestore.collection<IProductosId>("productos");
   this.obtenerProductos();
   }
@@ -43,6 +45,12 @@ export class ProductosService {
 
   editarProducto(id:string, data:IProductos){
     return this.collecttionProducto.doc(id).update(data)
+  }
+  subirImagen(imagen:File, product : IProductos){
+    this.filePath = `catalogo/${imagen.name}`
+    const fileRef = this.storage.ref(this.filePath)
+    const tarea = this.storage.upload(this.filePath, imagen)
+
   }
 
 

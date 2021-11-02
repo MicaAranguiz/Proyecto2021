@@ -1,3 +1,4 @@
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,9 +18,10 @@ import { LoginComponent } from './paginas/login/login.component';
 import { EditarComponent } from './paginas/editar/editar.component';
 import { AgregarComponent } from './paginas/agregar/agregar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { AngularFireStorageModule } from '@angular/fire/compat/storage'
 import {AccordionModule} from 'primeng/accordion';
 import {GMapModule} from 'primeng/gmap';
+import { StorageComponent } from './paginas/storage/storage.component';
 
 @NgModule({
   declarations: [
@@ -31,10 +33,12 @@ import {GMapModule} from 'primeng/gmap';
     InicioComponent,
     LoginComponent,
     EditarComponent,
-    AgregarComponent
+    AgregarComponent,
+    StorageComponent
   ],
   imports: [
     BrowserModule,
+    AngularFireStorageModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig), //inicializamos la base de datos
@@ -43,6 +47,7 @@ import {GMapModule} from 'primeng/gmap';
     FormsModule,
     AccordionModule,
     GMapModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,4 @@
-*{
-  font-family:Georgia, Times, 'Times New Roman', serif;
-}
+
 
 body {
   margin: 0;
@@ -44,7 +42,7 @@ p{
  }
  h1{
 font-size:30px;
-text-align: center;   
+text-align: center;
 }
 #categorias{
   margin-left: 40%;
@@ -61,7 +59,7 @@ text-align: center;
   font-size: 40px;
 }
 .destacados{
-  width:260px;
+  width:240px;
   margin:3%;
   margin-bottom: 7%;
   border: #929292 3px;
@@ -208,7 +206,7 @@ a {
   -o-transform:scale(1.15);
   transform:scale(1.15);
   }
-  
+
   #cards_landscape_wrap-2 .card-flyer{
   background: #FFFFFF;
   margin-top: 50px;
@@ -224,4 +222,3 @@ a {
   }
 
   /* fin */
-  

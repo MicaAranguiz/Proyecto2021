@@ -8,6 +8,7 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
 import { MenuComponent } from './paginas/menu/menu.component';
 import { ProductosComponent } from './paginas/productos/productos.component';
 import { LoginComponent} from './paginas/login/login.component'
+import { StorageComponent } from './paginas/storage/storage.component';
 
 const routes: Routes = [
   {
@@ -38,7 +39,10 @@ const routes: Routes = [
   },
   {
     path: 'login', component:LoginComponent
-  }
+  },
+  {
+    path: 'storage', component:StorageComponent
+  },
 ];
 
 @NgModule({
