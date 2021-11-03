@@ -1,29 +1,42 @@
-<img src="https://www.empresaactual.com/wp-content/uploads/2021/06/datos-de-contacto.jpeg" class="img-fluid"
-  id="principal" alt="...">
 <div class="grid" id="contacto">
   <div class="col">
-    <div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog"
-      id="modalSignin">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content rounded-5 shadow">
-          <div class="modal-header p-5 pb-4 border-bottom-0">
-            <!-- <h5 class="modal-title">Modal title</h5> -->
-            <h2 class="fw-bold mb-0">Iniciar Sesión</h2>
-          </div>
-          <div class="modal-body p-5 pt-0">
-            <form class="">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-              </div>
-              <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
-            </form>
-          </div>
-        </div>
+    <div class="contact_form">
+      <div class="formulario">
+        <h1>Contactános</h1>
+        <form action="submeter-formulario.php" method="post">
+          <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+              placeholder="Escribe tu nombre">
+          </p>
+          <p>
+            <label for="email" class="colocar_email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio"
+              placeholder="Escribe tu Email">
+          </p>
+          <p>
+            <label for="telefone" class="colocar_telefono">Teléfono
+            </label>
+            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+          </p>
+
+
+          <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+              placeholder="Deja aquí tu comentario..."></textarea>
+          </p>
+          <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
+
+        </form>
       </div>
     </div>
   </div>
@@ -31,16 +44,39 @@
 <div class="container">
   <p class="btn btn-light" class="categorias">SUCURSALES</p>
 </div>
+
+
 <div class="grid" id="sucursales">
   <div class="col">
     <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.8372647489196!2d-67.99256108489644!3d-38.92769690636871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30e7ab1a448f%3A0x931e0658140bd6e2!2sMargus!5e0!3m2!1ses-419!2sar!4v1635777984895!5m2!1ses-419!2sar"
-    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.743269910025!2d-67.98784018468972!3d-38.92984507956558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30ef2ee4b6b3%3A0xf60599626c221a60!2sCentro%20Educativo%20Tecnica%20N%C2%BA%2030!5e0!3m2!1ses-419!2sar!4v1635949279875!5m2!1ses-419!2sar"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </div>
   <div class="col">
-   
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.8372647489196!2d-67.99256108489644!3d-38.92769690636871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a30e7ab1a448f%3A0x931e0658140bd6e2!2sMargus!5e0!3m2!1ses-419!2sar!4v1635777984895!5m2!1ses-419!2sar"
-      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="container">
+      <h1> NUESTRAS SEDES</h1>
+      <p> Acá</p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="container">
+      <h1> REDES SOCIALES </h1>
+      <!-- redes -->
+      <div class="container-fluid" id="redesfondo">
+        <p> <a href="https://www.instagram.com/elrubiuswtf/?hl=es-la" id="redessociales"
+            class="bi bi-instagram">zappa-2021</a>
+          <br>
+        </p>
+        <p> <a href="https://www.instagram.com/elrubiuswtf/?hl=es-la" id="redessociales"
+            class="bi bi-twitter">zappa-2021</a>
+          <br>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/elrubiuswtf/?hl=es-la   " id="redessociales"
+            class="bi bi-whatsapp">zappa-2021</a>
+          <br>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
