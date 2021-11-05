@@ -20,6 +20,7 @@ export class AgregarComponent implements OnInit {
       url: ['', Validators.required],
       precio: ['',Validators.required],
     })
+    
   }
 
   ngOnInit(): void {
@@ -37,3 +38,4 @@ export class AgregarComponent implements OnInit {
     this.firestore.agregarProducto(producto)
   }
 }
+

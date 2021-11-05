@@ -5,7 +5,7 @@
 display: block;
 }
 #sucursales{
-  background-color:rgb(236, 229, 229);
+  background-color:rgb(241, 241, 241);
   margin-left:auto;
 }
 #redessociales{
@@ -13,6 +13,9 @@ display: block;
 }
 img{
   width:10%;
+}
+.titulos{
+  font-weight: 900;
 }
 
 #redesfondo{
