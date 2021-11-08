@@ -1,5 +1,14 @@
-*{
-    font-family:Georgia, Times, 'Times New Roman', serif;
+#imagen1{
+  width:100% !important;
+  height:301px;
+
+}
+#titulocontacto{
+  margin-top:-13%;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 8%;
+  color:white;
 }
 /*boton con hover*/
 .btn-5 {
