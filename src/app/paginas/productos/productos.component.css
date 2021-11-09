@@ -1,14 +1,18 @@
-#imagen1{
-  width:100% !important;
-  height:301px;
 
+#texto{
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(144, 240, 240);
+  background-color: #e7e5e5;
 }
 #titulocontacto{
-  margin-top:-13%;
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
-  margin-bottom: 8%;
-  color:white;
+  font-weight:800;
+  color:rgb(0, 0, 0);
+  font-family: 'Mochiy Pop One';
+  margin-bottom: -4px;
+
 }
 /*boton con hover*/
 .btn-5 {

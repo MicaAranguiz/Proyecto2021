@@ -11,6 +11,10 @@
 #navbarColor02{
   margin-left: 5%;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
 .rounded {
     border-radius: .25rem!important;

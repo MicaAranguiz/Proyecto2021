@@ -15,12 +15,9 @@ display: block;
 #redessociales{
   font-size: 20px;
 }
-#titulocontacto{
-  margin-top:-13%;
-  font-size: 70px;
-  text-align: center;
-  margin-bottom: 8%;
-  color:white;
+
+h1{
+  font-weight: 900;
 }
 p{
   text-align: center;
@@ -30,8 +27,24 @@ p{
   height:301px;
 
 }
+#texto{
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(149, 151, 238);
+  background-color: #dbd6d6;
+}
+#titulocontacto{
+  font-size: 60px;
+  text-align: center;
+  font-weight:800;
+  color:rgb(0, 0, 0);
+  font-family: 'Mochiy Pop One';
+  margin-bottom: -4px;
+
+}
 .titulos{
   font-weight: 900;
+  margin-top: 4%;
 }
 
 #redesfondo{
@@ -70,8 +83,13 @@ h1{
   padding-top: 30px;
   padding-bottom: 20px;  
   background-color: #ece6e6; 
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(149, 151, 238);
 }
-
+iframe{
+  margin-left: 50px;
+}
 
 input{
   background-color: #fbfbfb; 
@@ -80,7 +98,7 @@ input{
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
-  border-color: #1a5be7; 
+  border-color: rgb(149, 151, 238);
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
@@ -94,7 +112,7 @@ textarea{
   border-radius: 5px;  
   border-style: solid; 
   border-width: 1px; 
-  border-color: #1a5be7; 
+  border-color: rgb(149, 151, 238);
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
@@ -117,8 +135,8 @@ button{
   margin-bottom: 20px; 
   margin-top: 10px;   
   text-transform: uppercase;
-  background-color: #1a5be7;  
-  border-color: #1a5be7; 
+  background-color:rgb(149, 151, 238);
+  border-color:rgb(149, 151, 238);
   border-style: solid; 
   border-radius: 10px;  
   width: 420px;   
@@ -132,7 +150,7 @@ button p{
 
 
 span{
-  color: #1a5be7; 
+  color: rgb(149, 151, 238);
 }
 
 
@@ -140,7 +158,7 @@ h1{
   font-size: 39px;  
   text-align: letf; 
   padding-bottom: 20px; 
-  color: #1a5be7; 
+  color:rgb(149, 151, 238);
 }
 
 ::-webkit-input-placeholder {
