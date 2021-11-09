@@ -23,6 +23,7 @@ import {AccordionModule} from 'primeng/accordion';
 import {GMapModule} from 'primeng/gmap';
 import { StorageComponent } from './paginas/storage/storage.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,7 @@ import { StorageComponent } from './paginas/storage/storage.component';
     LoginComponent,
     EditarComponent,
     AgregarComponent,
-    StorageComponent
+    StorageComponent,
   ],
   imports: [
     BrowserModule,

@@ -74,7 +74,7 @@ text-align: center;
   height: 300px;
 }
 #partedestacados{
-  margin-left:90px;
+  margin-left:60px;
 }
 #botondestacados{
 margin-top:30%;
@@ -95,8 +95,8 @@ img{
   text-align: center!important;
 }
 #redessociales{
-  margin-left: 33%;
-  font-size: 90px;
+  margin-left: 35%;
+  font-size: 75px;
 }
 #botonredes{
   margin-left: 47%;
@@ -240,7 +240,9 @@ a {
   }
 
   /* fin */
-
+#productosnuevos{
+  margin-left:2%;
+}
 
   /* cards de productos destacados */
 
@@ -251,8 +253,7 @@ a {
     transform: translate(-50%,-50%);
     width: 240px;
     height: 338px;
-    background: #969393;
-    overflow: hidden;
+      overflow: hidden;
 }
 .card1 .imgBx,
 .card1 .details {
@@ -274,7 +275,8 @@ a {
     width: 100%;
 }
 .card1 .details {
-    background: #c9c4c4;
+  background-image: url(https://images.pexels.com/photos/9665181/pexels-photo-9665181.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+
     top: 0;
     left: 100%;
     padding: 60px 30px;

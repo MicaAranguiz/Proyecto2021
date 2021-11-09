@@ -2,7 +2,7 @@
   <h4 id="titulocontacto"> PRODUCTOS</h4>
 </div>
 
-<div class="grid">
+<div class="grid" >
   <div class="col-2">
     <div class="uk-margin">
       <form class="uk-search uk-search-default">
@@ -10,14 +10,14 @@
           <input class="uk-search-input" type="search" placeholder="Search">
       </form>
   </div>
-  
+
     <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
             Mujer
-          </button> 
+          </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
           data-bs-parent="#accordionFlushExample">
@@ -87,16 +87,17 @@
 
   <div class="col-10">
 
-    <div class="container">
+    <div class="container" >
       <div class="row">
         <div class="shop-card" *ngFor="let producto of productos">
-          <div class="title">
-            {{ producto.nombre }}
-          </div>
+
           <div class="slider">
             <figure data-color="#E24938, #A30F22">
               <img src="{{ producto.url }}" class="card-img-top" alt="..." />
             </figure>
+          </div>
+          <div class="title">
+            {{ producto.nombre }}
           </div>
           <div class="desc">
         <b> Descripción : </b>  {{ producto.descripcion }}

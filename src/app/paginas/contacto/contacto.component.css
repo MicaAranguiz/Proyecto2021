@@ -28,13 +28,13 @@ p{
 
 }
 #texto{
-  border-width: 10px;
+  border-width: 5px;
   border-style: solid;
-  border-color: rgb(149, 151, 238);
-  background-color: #dbd6d6;
+  border-color: #BBADFF;
+
 }
 #titulocontacto{
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   font-weight:800;
   color:rgb(0, 0, 0);
@@ -74,15 +74,15 @@ h1{
 
 
 /* formulario */
-.contact_form{  
-  width: 500px; 
+.contact_form{
+  width: 500px;
   height: auto;
   margin-left : 100px;
   margin-top:30px;
-  border-radius: 10px;  
+  border-radius: 10px;
   padding-top: 30px;
-  padding-bottom: 20px;  
-  background-color: #ece6e6; 
+  padding-bottom: 20px;
+  background-color: #ece6e6;
   border-width: 5px;
   border-style: solid;
   border-color: rgb(149, 151, 238);
@@ -92,72 +92,74 @@ iframe{
 }
 
 input{
-  background-color: #fbfbfb; 
-  width: 408px; 
-  height: 40px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
   border-color: rgb(149, 151, 238);
-  margin-top: 10px;  
+  margin-top: 10px;
   padding-left: 10px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 
 textarea{
-  background-color: #fbfbfb; 
-  width: 405px; 
-  height: 150px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
   border-color: rgb(149, 151, 238);
-  margin-top: 10px;  
+  margin-top: 10px;
   padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+  margin-bottom: 20px;
+  padding-top: 15px;
 }
 
 button{
   margin-left:8%;
 }
 label{
-  display: block; 
-  float: center;  
+  display: block;
+  float: center;
+
 }
 
 
 button{
-  height: 45px; 
+  height: 45px;
   padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px;   
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   text-transform: uppercase;
   background-color:rgb(149, 151, 238);
   border-color:rgb(149, 151, 238);
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
   cursor: pointer;
 }
 
 
 button p{
-  color: #fff; 
+  color: #fff;
 }
 
 
 span{
   color: rgb(149, 151, 238);
+  
 }
 
 
 h1{
-  font-size: 39px;  
-  text-align: letf; 
-  padding-bottom: 20px; 
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
   color:rgb(149, 151, 238);
 }
 

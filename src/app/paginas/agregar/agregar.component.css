@@ -3,15 +3,43 @@ margin:10px;
 padding:10px;
 text-align: center;
 }
+#texto{
+  border-width: 5px;
+  border-style: solid;
+  border-color: #A6CFD5
 
+}
+button{
+  width:15%;
+  margin-left:43%;
+
+  background-color: #719d82;
+
+}
+button:hover{
+background-color: #29524A;
+}
+#titulocontacto{
+  font-size: 40px;
+  text-align: center;
+  font-weight:800;
+  color:rgb(0, 0, 0);
+  font-family: 'Mochiy Pop One';
+  margin-bottom: -4px;
+
+}
 input{
-    width:50%;
-    margin-left:25%;
+    width:30%;
+    margin-left:35%;
     background-color: rgb(158, 188, 189);
 }
 button{
     width:15%;
     margin-left:43%;
+}
+.form-label{
+  font-weight: 800;
+
 }
 html{
 

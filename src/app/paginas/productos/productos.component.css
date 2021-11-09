@@ -1,18 +1,24 @@
 
 #texto{
-  border-width: 10px;
+  border-width: 5px;
   border-style: solid;
-  border-color: rgb(144, 240, 240);
-  background-color: #e7e5e5;
+  border-color: #586994
+
 }
 #titulocontacto{
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   font-weight:800;
   color:rgb(0, 0, 0);
   font-family: 'Mochiy Pop One';
   margin-bottom: -4px;
 
+}
+#barracolor{
+  border-width: 5px;
+  margin-top:5px;
+  border-style: solid;
+  border-color: #886176;
 }
 /*boton con hover*/
 .btn-5 {
@@ -96,14 +102,17 @@ Shop Card
   z-index: 2;
   margin:3%;
 }
-
+.uk-margin{
+  margin: 10px;
+}
   .title {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 20px;
     color: #23211f;
     margin-bottom: 5px;
-  height:11% !important;
+    margin-top: 30px;
+  height:10% !important;
   }
   .price {
     float: center;
@@ -115,7 +124,8 @@ Shop Card
     margin-top: 4px;
   }
   .slider{
-    height:41% !important;
+    height:40% !important;
+    margin-top:-10px;
   }
  .p-accordion-header-link {
     /* color: rgba(255, 255, 255, 0.87); */
@@ -135,5 +145,5 @@ b{
 }
 .price{
   margin-top:4%;
- 
+
 }
