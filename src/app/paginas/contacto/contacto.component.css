@@ -10,7 +10,7 @@ display: block;
 }
 #sucursales{
   background-color:rgb(241, 241, 241);
-  margin-left:auto;
+
 }
 #redessociales{
   font-size: 20px;
@@ -62,7 +62,7 @@ h1{
   text-align: center;
 }
 .categorias{
-  margin-left: 38%;
+  margin-left: 35%;
   margin-top: 2%;
   margin-bottom: 2%;
   font-weight: 1000;
