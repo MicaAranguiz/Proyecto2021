@@ -47,7 +47,8 @@ import { StorageComponent } from './paginas/storage/storage.component';
     ReactiveFormsModule,
     FormsModule,
     AccordionModule,
-    GMapModule
+    GMapModule,
+ 
 
   ],
   providers: [],
