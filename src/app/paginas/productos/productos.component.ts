@@ -1,6 +1,5 @@
 import { IProductosId } from './../../models/productos.interface';
 import { Component, OnInit } from '@angular/core';
-import { IProductos } from 'src/app/models/productos.interface';
 import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
