@@ -42,6 +42,12 @@ margin-left:-1%;
     margin-top:-2%;
 
   }
+  .form-select{
+    width:30%;
+    margin-left:35%;
+    background-color: rgb(158, 188, 189);
+    margin-top:1%;
+  }
   button{
       width:15%;
       margin-left:43%;

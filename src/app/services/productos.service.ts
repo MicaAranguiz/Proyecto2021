@@ -35,9 +35,8 @@ export class ProductosService {
   obtenerProducto(id: string) {
     return this.collecttionProducto.doc(id).snapshotChanges
   }
-
   buscarXcategoria(cat:string){
-    
+    return this.collecttionProducto.doc(cat).snapshotChanges
   }
 
   eliminarProducto(id: string) {//el doc busca por el id, en este caso

@@ -16,12 +16,21 @@
     <label for="exampleInputPassword1" class="form-label">Números Disponibles</label>
     <input type="url" class="form-control" id="exampleInputPassword1" formControlName='numero'>
   </div>
-
+  <div class="mb-3" formControlName='cat'>
+    <label for="exampleInputPassword1" class="form-label">Categoría</label>
+    <select class="form-select" aria-label="Default select example" formControlName="cat">
+      <option value="1">Seleccionar Categoría</option>
+      <option value="Mujer">Mujer</option>
+      <option value="Hombre">Hombre</option>
+      <option value="Niños">Niños</option>
+      <option value="Unisex">Unisex</option>
+    </select>
+  </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Precio</label>
     <input type="url" class="form-control" id="exampleInputPassword1" formControlName='precio'>
   </div>
-  <div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Imagen</label></div>
+  <div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Imagen Personal</label></div>
   <div class="input-group mb-3">
     <input type="file" class="form-control" id="inputGroupFile01" (change)=seleccionarImagen($event)>
   </div>

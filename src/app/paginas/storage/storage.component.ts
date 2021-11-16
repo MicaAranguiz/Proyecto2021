@@ -37,7 +37,6 @@ export class StorageComponent implements OnInit {
 
   }
   guardarProducto(){
-    alert("voy a guardar");
 
     this.productsServices.subirImagen(this.imagenSeleccionada, this.formulario.value)
   }
