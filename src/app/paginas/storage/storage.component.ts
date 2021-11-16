@@ -20,7 +20,10 @@ export class StorageComponent implements OnInit {
     this.formulario = formB.group({
       nombre: ['', Validators.required],
       descripcion: ['', Validators.required],
+      numero: ['',Validators.required],
       url: ['', Validators.required],
+      precio: ['',Validators.required],
+      cat:['',Validators.required],
     })
   }
 
@@ -35,6 +38,7 @@ export class StorageComponent implements OnInit {
   }
   guardarProducto(){
     alert("voy a guardar");
+
     this.productsServices.subirImagen(this.imagenSeleccionada, this.formulario.value)
   }
 

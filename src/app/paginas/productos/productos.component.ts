@@ -30,6 +30,9 @@ export class ProductosComponent implements OnInit {
   editarProducto(){
 
   }
+  seleccionarCat(){
+
+  }
 
 }
 

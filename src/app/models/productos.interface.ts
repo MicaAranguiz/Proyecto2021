@@ -9,4 +9,5 @@ export interface IProductos {
   url: string;
   precio: string;
   numero:string;
+  cat:string,
 }
