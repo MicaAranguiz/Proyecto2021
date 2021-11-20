@@ -6,21 +6,20 @@
   #texto{
     border-width: 5px;
     border-style: solid;
-    border-color: #A6CFD5
-
+    border-color: #0d97ac;
   }
   button{
     width:15%;
     margin-left:43%;
 
-    background-color: #719d82;
+    background-color:  #32a7b9;
 
   }
   button:hover{
-  background-color: #29524A;
+  background-color:   #0c6c7a;
   }
   #titulocontacto{
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     font-weight:800;
     color:rgb(0, 0, 0);
@@ -33,19 +32,20 @@ margin-left:-1%;
   input{
       width:30%;
       margin-left:35%;
-      background-color: rgb(158, 188, 189);
+      background-color:rgb(158, 188, 189);
+
   }
   .input-group{
     width:30%;
     margin-left:35%;
-    background-color: rgb(158, 188, 189);
+    background-color:     rgb(158, 188, 189);
     margin-top:-2%;
 
   }
   .form-select{
     width:30%;
     margin-left:35%;
-    background-color: rgb(158, 188, 189);
+    background-color:rgb(158, 188, 189);
     margin-top:1%;
   }
   button{
