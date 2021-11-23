@@ -9,6 +9,8 @@ import { MenuComponent } from './paginas/menu/menu.component';
 import { FooterComponent } from './paginas/footer/footer.component';
 import { ProductosComponent } from './paginas/productos/productos.component';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth'
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule }  from '@angular/fire/compat/database';
 import { environment } from 'src/environments/environment';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
@@ -22,7 +24,6 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage'
 import {AccordionModule} from 'primeng/accordion';
 import {GMapModule} from 'primeng/gmap';
 import { StorageComponent } from './paginas/storage/storage.component';
-
 
 @NgModule({
   declarations: [
@@ -48,8 +49,8 @@ import { StorageComponent } from './paginas/storage/storage.component';
     FormsModule,
     AccordionModule,
     GMapModule,
- 
-
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
