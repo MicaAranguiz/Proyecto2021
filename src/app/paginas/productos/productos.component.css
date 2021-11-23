@@ -93,7 +93,7 @@ Shop Card
 
 .shop-card {
   width: 300px;
-  height:540px;
+  height:570px;
   background: #f5f5f5;
   box-shadow: 0 10px 20px rgb(58, 54, 54);
   border-radius: 5px;
@@ -103,7 +103,11 @@ Shop Card
   margin:3%;
 }
 .uk-margin{
-  margin: 10px;
+  margin: 20px;
+}
+h1{
+  font-weight: 1000;
+  font-size: 30px;
 }
   .title {
     font-weight: 700;
@@ -117,7 +121,7 @@ Shop Card
   .price {
     float: center;
     color:rgb(16, 53, 122);
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 900;
     margin-bottom: 3px;
     transition: color .3s ease-in-out;
@@ -127,7 +131,16 @@ Shop Card
     height:40% !important;
     margin-top:-10px;
   }
-
+  .categoria{
+    float: center;
+    color:rgb(16, 53, 122);
+    font-size: 17 px;
+    font-weight: 900;
+    margin-bottom: 2px;
+    margin-top:5px;
+    transition: color .3s ease-in-out;
+    height:8%;
+  }
  .p-accordion-header-link {
     /* color: rgba(255, 255, 255, 0.87); */
     background-color: black !important;
@@ -140,7 +153,10 @@ b{
 }
 .desc{
   margin:-3%;
-  
+  margin-left:10px;
+font-weight: 1000;
+width:95%;
+
 }
 .cta{
   margin-top: 3%;
@@ -149,14 +165,11 @@ b{
 }
 .price{
   margin-top:4%;
-
 }
-
-
 img {
-  transition:all 0.5s; 
-  -moz-transition:all 0.9s; 
-  -webkit-transition:all 0.9s; 
+  transition:all 0.5s;
+  -moz-transition:all 0.9s;
+  -webkit-transition:all 0.9s;
   overflow:hidden;
   background-color: #f5f5f5;
 }
@@ -168,6 +181,7 @@ img {
 -moz-box-shadow: 0px 6px 50px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 6px 50px 0px rgba(0,0,0,0.90);
  border: solid 6px white;
+ margin-top:120px;
 }
 #botonagregar{
 margin-left:45%;

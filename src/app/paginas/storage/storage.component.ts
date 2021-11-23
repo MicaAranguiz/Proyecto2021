@@ -24,6 +24,7 @@ export class StorageComponent implements OnInit {
       url: ['', Validators.required],
       precio: ['',Validators.required],
       cat:['',Validators.required],
+      marca:['',Validators.required],
     })
   }
 
@@ -41,21 +42,4 @@ export class StorageComponent implements OnInit {
     this.productsServices.subirImagen(this.imagenSeleccionada, this.formulario.value)
   }
 
-
-
-
-
-
-
-  // enviarDatos() {
-  //   console.log(this.formulario.value);
-  //   const archivo : IProductos = {
-  //     url: this.formulario.value.url,
-  //     nombre: '',
-  //     descripcion: '',
-  //     precio: '',
-  //     numero: ''
-  //   }
-  //   this.firestore.agregarProducto(archivo)
-  // }
 }

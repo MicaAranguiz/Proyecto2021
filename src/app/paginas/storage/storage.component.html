@@ -23,6 +23,10 @@
     </select>
   </div>
   <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Marca</label>
+    <input type="url" class="form-control" id="exampleInputPassword1" formControlName='marca'>
+  </div>
+  <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Descripción</label>
     <input type="text" class="form-control" id="exampleInputPassword1" formControlName='descripcion'>
   </div>
@@ -30,11 +34,12 @@
     <label for="exampleInputPassword1" class="form-label">Números Disponibles</label>
     <input type="url" class="form-control" id="exampleInputPassword1" formControlName='numero'>
   </div>
-  
+
+
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Precio</label>
     <input type="url" class="form-control" id="exampleInputPassword1" formControlName='precio'>
   </div>
- 
+
   <button type="submit" class="btn btn-primary" (click)="guardarProducto()">Agregar</button>
 </form>

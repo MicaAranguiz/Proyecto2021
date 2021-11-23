@@ -7,6 +7,7 @@ display: block;
 #infocontacto{
   background-color: #fbfbfb;
   margin-top:30px;
+
 }
 #sucursales{
   background-color:rgb(241, 241, 241);
@@ -40,11 +41,10 @@ p{
   color:rgb(0, 0, 0);
   font-family: 'Mochiy Pop One';
   margin-bottom: -4px;
-
 }
 .titulos{
   font-weight: 900;
-  margin-top: 4%;
+  margin-top: 2%;
 }
 
 #redesfondo{
@@ -88,7 +88,8 @@ h1{
   border-color: rgb(149, 151, 238);
 }
 iframe{
-  margin-left: 50px;
+  margin-left:25%;
+ margin-top:10%;
 }
 
 input{
@@ -102,6 +103,7 @@ input{
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
+
 }
 
 
@@ -152,7 +154,7 @@ button p{
 
 span{
   color: rgb(149, 151, 238);
-  
+
 }
 
 

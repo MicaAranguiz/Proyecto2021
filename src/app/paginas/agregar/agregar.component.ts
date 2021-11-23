@@ -20,6 +20,7 @@ export class AgregarComponent implements OnInit {
       url: ['', Validators.required],
       precio: ['',Validators.required],
       cat:['',Validators.required],
+      marca:['',Validators.required],
     })
 
   }
@@ -34,7 +35,8 @@ export class AgregarComponent implements OnInit {
       numero:this.formulario.value.numero,
       url : this.formulario.value.url,
       precio: this.formulario.value.precio,
-      cat:this.formulario.value.cat
+      cat:this.formulario.value.cat,
+      marca:this.formulario.value.marca,
 
     }
     this.firestore.agregarProducto(producto)

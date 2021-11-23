@@ -10,4 +10,5 @@ export interface IProductos {
   precio: string;
   numero:string;
   cat:string,
+  marca:string;
 }

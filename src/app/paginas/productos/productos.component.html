@@ -2,25 +2,22 @@
   <h4 id="titulocontacto"> PRODUCTOS</h4>
 </div>
 
-<div class="grid" >
+<div class="grid">
   <div class="col-2">
     <div class="uk-margin">
-      <form class="uk-search uk-search-default">
-          <span uk-search-icon></span>
-          <input class="uk-search-input" type="search" placeholder="Search">
-      </form>
-  </div>
+  <h1>CATEGORÍAS</h1>
+    </div>
 
     <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
             Mujer
           </button>
         </h2>
-        <div id="flush-collapseOne" (click)="seleccionarCat()" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-          data-bs-parent="#accordionFlushExample">
+        <div id="flush-collapseOne" (click)="seleccionarCat()" class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
             <!-- cuando se despliega -->
           </div>
@@ -84,22 +81,34 @@
           <div class="title">
             {{ producto.nombre }}
           </div>
-          <div class="price">
-            <b class="price"> Precio: </b> $ {{producto.precio}}
-                 </div>
+          <div class="categoria">
+       {{producto.cat}}
+          </div>
+
           <div class="desc">
-        <b> Descripción : </b>  {{ producto.descripcion }}
-          <br>
-        <b> Números:</b>  {{ producto.numero }}
-        <br>
-        <b> Categoría: </b> {{producto.cat}}
-        
+         {{ producto.descripcion }}
+         {{ producto.marca }}
+            <br>
+            <b> Números:</b> {{ producto.numero }}
+            <br>
+            <div class="price">
+        $ {{producto.precio}}
+            </div>
           </div>
           <div class="cta">
-            
+
             <div class="card-body">
               <button class="btn btn-5 btn-5 bi bi-trash-fill"
                 (click)="eliminarProducto(producto.id)"><span>Eliminar</span></button>
+            </div>
+          </div>
+          <div class="cta">
+
+            <div class="card-body">
+              <a href="editar">
+                <button class="btn btn-5 btn-5 bi bi-pencil-square"><span>Editar</span></button>
+              </a>
+
             </div>
           </div>
         </div>
@@ -111,13 +120,17 @@
   </div>
 
 
-  
+
 
   <div class="col" id="botonagregar">
     <div class="container">
-              <a href="agregar"><button
-                  class="btn btn-5 btn-5 bi bi-file-earmark-plus-fill"><span>Agregar</span></button></a>
-      </div>
+      <a href="storage"><button class="btn btn-5 btn-5 bi bi-file-earmark-plus-fill"><span>Agregar</span></button></a>
     </div>
-</div>
+  </div>
 
+  <div class="col" id="botonagregar">
+    <div class="container">
+      <a href="agregar"><button class="btn btn-5 btn-5 bi bi-file-earmark-plus-fill"><span>Agregar por Link</span></button></a>
+    </div>
+  </div>
+</div>
