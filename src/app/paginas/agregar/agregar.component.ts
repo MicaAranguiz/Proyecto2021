@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Form, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { IProductos } from 'src/app/models/productos.interface';
 import { ProductosService } from 'src/app/services/productos.service';
 
@@ -12,7 +13,7 @@ export class AgregarComponent implements OnInit {
 
   formulario: FormGroup;
 
-  constructor(private formB: FormBuilder, private firestore:ProductosService) {
+  constructor(private formB: FormBuilder, private firestore:ProductosService, private route: Router) {
     this.formulario = formB.group({
       nombre: ['', Validators.required],
       descripcion: ['', Validators.required],
@@ -40,6 +41,11 @@ export class AgregarComponent implements OnInit {
 
     }
     this.firestore.agregarProducto(producto)
+  }
+  
+  volveraproducto() {
+    this.route.navigateByUrl('productos')
+ 
   }
 }
 

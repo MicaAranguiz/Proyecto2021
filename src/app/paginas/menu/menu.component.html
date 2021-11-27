@@ -23,7 +23,19 @@
             <a class="nav-link" href="contacto">Contacto</a>
           </li>
         </ul>
-<!-- 
+        <ul class="menu">
+          <li class="nav-item">
+            <a class="nav-link" href="login" *ngIf="!logueado"> Iniciar Sesión  <i class="bi bi-person-plus-fill" ></i></a>
+            <a class="nav-link" href="login" *ngIf="logueado"> {{email}}  <i class="bi bi-person-check-fill"></i></a>
+          </li>
+        </ul>
+        <ul class="menu" *ngIf="logueado">
+          <li class="nav-item">
+            <a class="nav-link" type="submit" value="Cerrar Sesión" class="submit" (click)="cerrarSesion()"><i class="bi bi-person-x-fill"></i></a>
+          </li>
+        </ul>
+        
+        <!-- 
         <ul class="menu">
           <li class="nav-item">
             <a class="nav-link" href="agregar">Agregar</a>
@@ -39,12 +51,6 @@
             <a class="nav-link" href="storage">Storage</a>
           </li>
         </ul> -->
-        <ul class="menu">
-          <li class="nav-item">
-            <a class="nav-link" href="login"> Iniciar Sesión  <i class="bi bi-person-plus-fill" ></i></a>
-          </li>
-
-        </ul>
 
       </ul>
 

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IProductos } from 'src/app/models/productos.interface';
 import { ProductosService } from 'src/app/services/productos.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-storage',
@@ -16,7 +17,7 @@ export class StorageComponent implements OnInit {
   public filePath: string = "";
 
 
-  constructor(private formB: FormBuilder, private storage: AngularFireStorage, private productsServices : ProductosService) {
+  constructor(private formB: FormBuilder, private storage: AngularFireStorage, private productsServices : ProductosService, private route: Router) {
     this.formulario = formB.group({
       nombre: ['', Validators.required],
       descripcion: ['', Validators.required],
@@ -41,5 +42,8 @@ export class StorageComponent implements OnInit {
 
     this.productsServices.subirImagen(this.imagenSeleccionada, this.formulario.value)
   }
-
+  volveraproducto() {
+    this.route.navigateByUrl('productos')
+ 
+  }
 }

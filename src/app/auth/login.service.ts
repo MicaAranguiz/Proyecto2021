@@ -10,16 +10,22 @@ export class LoginService {
   user!: Observable<any>
 
   constructor(private auth: AngularFireAuth) {
-    this.auth.authState.subscribe(user => { console.log(user?.email) })
+    this.user = this.auth.authState;
   }
 
-  login(email: string, pass: string) {
-    this.auth.signInWithEmailAndPassword(email, pass);
+  //iniciamos sesion con email y contraseña
+  LoginFirebase(username: string, password: string) {
+    this.auth.signInWithEmailAndPassword(username, password);
   }
-  get authenticated(): boolean {
+  //cerramos sesion
+  cerrarSesion() {
+    this.auth.signOut();
+  }
+  autenticado(): boolean {
     return this.user != null;
   }
-  get currentUser(): Observable<any> {
+  currentUser(): Observable<any> {
     return this.user;
   }
+
 }

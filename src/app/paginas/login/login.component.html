@@ -1,8 +1,25 @@
-<div class="login">
-  <div class="form">
-    <h2>Bienvenido</h2>
-    <input type="text" placeholder="E-mail" />
-    <input type="password" placeholder="Contraseña" />
-    <input type="submit" value="Registrarme" class="submit" />
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    
+    <!-- Icon -->
+    <div class="fadeIn first">
+     <h2>INGRESE CORREO Y CONTRASEÑA</h2>
+    </div>
+    <form  [formGroup]="formularioLogin">
+      <input type="text" placeholder="E-mail"  formControlName='username'/>
+      <input type="password" placeholder="Contraseña"  formControlName='password'/>
+      <input type="submit" value="INICIAR SESIÓN" class="submit" (click)="login()" />
+    </form>
+
+
+
   </div>
 </div>
+

@@ -3,73 +3,7 @@
 </div>
 
 <div class="grid">
-  <div class="col-2">
-    <div class="uk-margin">
-  <h1>CATEGORÍAS</h1>
-    </div>
-
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Mujer
-          </button>
-        </h2>
-        <div id="flush-collapseOne" (click)="seleccionarCat()" class="accordion-collapse collapse"
-          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            <!-- cuando se despliega -->
-          </div>
-        </div>
-
-
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Hombre
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-          data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Mujer</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Niños
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-          data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder .</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            Unisex
-          </button>
-        </h2>
-        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-          data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder .</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-
-
-
-  <div class="col-10">
+  <div class="col-12">
     <div class="container">
       <div class="row">
         <div class="shop-card" *ngFor="let producto of productos">
@@ -82,55 +16,62 @@
             {{ producto.nombre }}
           </div>
           <div class="categoria">
-       {{producto.cat}}
+            {{producto.cat}}
           </div>
 
           <div class="desc">
-         {{ producto.descripcion }}
-         {{ producto.marca }}
+            {{ producto.descripcion }}
+            <br>
+            {{ producto.marca }}
             <br>
             <b> Números:</b> {{ producto.numero }}
             <br>
             <div class="price">
-        $ {{producto.precio}}
+              $ {{producto.precio}}
             </div>
           </div>
-          <div class="cta">
-
-            <div class="card-body">
-              <button class="btn btn-5 btn-5 bi bi-trash-fill"
-                (click)="eliminarProducto(producto.id)"><span>Eliminar</span></button>
+          <div *ngIf="logueado" class="shop-card2">
+            <div class="cta">
+              <div class="card-body">
+                <button class="btn btn-5 btn-5 bi bi-trash-fill"
+                  (click)="eliminarProducto(producto.id)"><span>Eliminar</span></button>
+              </div>
             </div>
           </div>
-          <div class="cta">
-
-            <div class="card-body">
-              <a href="editar">
-                <button class="btn btn-5 btn-5 bi bi-pencil-square"><span>Editar</span></button>
-              </a>
-
-            </div>
-          </div>
+          
         </div>
-
+<!--   
+        <div  class="shop-card2" *ngFor="let producto of productos">
+          <div *ngIf="logueado"   class="shop-card2">
+            <div class="cta">
+              <div class="card-body">
+                <button class="btn btn-5 btn-5 bi bi-trash-fill"
+                  (click)="eliminarProducto(producto.id)"><span>Eliminar</span></button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
       </div>
     </div>
-
-
   </div>
-
-
-
-
-  <div class="col" id="botonagregar">
-    <div class="container">
-      <a href="storage"><button class="btn btn-5 btn-5 bi bi-file-earmark-plus-fill"><span>Agregar</span></button></a>
+<div  class="botonesapartados">
+  <div *ngIf="logueado">
+    <div class="col" id="botonagregar">
+      <div class="container">
+        <a href="storage"><button class="btn btn-5 btn-5 bi bi-file-earmark-plus-fill"><span>Agregar</span></button></a>
+      </div>
+    </div>
+  
+    <div class="col" id="botonagregar">
+      <div class="container">
+        <a href="agregar"><button class="btn btn-5 btn-5 bi bi-file-earmark-plus-fill"><span>Agregar por
+              Link</span></button></a>
+      </div>
     </div>
   </div>
+  
+   
+</div>
 
-  <div class="col" id="botonagregar">
-    <div class="container">
-      <a href="agregar"><button class="btn btn-5 btn-5 bi bi-file-earmark-plus-fill"><span>Agregar por Link</span></button></a>
-    </div>
-  </div>
 </div>

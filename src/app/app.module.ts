@@ -24,6 +24,10 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage'
 import {AccordionModule} from 'primeng/accordion';
 import {GMapModule} from 'primeng/gmap';
 import { StorageComponent } from './paginas/storage/storage.component';
+import { ButtonModule } from 'primeng/button';
+import { MessagesModule } from 'primeng/messages';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+
 
 @NgModule({
   declarations: [
@@ -50,6 +54,10 @@ import { StorageComponent } from './paginas/storage/storage.component';
     AccordionModule,
     GMapModule,
     AngularFireAuthModule,
+    ConfirmDialogModule,
+    ButtonModule,
+    MessagesModule,
+    
     AngularFirestoreModule
   ],
   providers: [],

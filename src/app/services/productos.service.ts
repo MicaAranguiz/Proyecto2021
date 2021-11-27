@@ -12,7 +12,7 @@ import { finalize, map } from 'rxjs/operators';
 export class ProductosService {
   //declaramos
   public urlImagen: string = "";
-  public productos!: Observable<IProductosId[ ]>;
+  public productos!: Observable<IProductosId[ ]>;  //te avisa cuando hay cambios
   public collecttionProducto!: AngularFirestoreCollection<any>;
   filePath: string = "";
   constructor(private firestore: AngularFirestore, private storage: AngularFireStorage) {
