@@ -44,25 +44,25 @@ export class ProductosService {
   }
 
   agregarProducto(data: IProductos) {
-    return this.collecttionProducto.add(data)
+    return this.collecttionProducto.add(data) //buscamos en la coleccion y retornamos lo que necesitamos
   }
 
   editarProducto(id: string, data: IProductos) {
     return this.collecttionProducto.doc(id).update(data)
   }
   subirImagen(imagen: File, product: IProductos) {
-    this.filePath = `catalogo/${imagen.name}`
-    const fileRef = this.storage.ref(this.filePath)
-    const tarea = this.storage.upload(this.filePath, imagen)
+    this.filePath = `catalogo/${imagen.name}` //donde insertar la imagen
+    const fileRef = this.storage.ref(this.filePath) //donde buscarla 
+    const tarea = this.storage.upload(this.filePath, imagen) //donde subirla
 
     tarea.snapshotChanges().pipe(
       finalize(() => {
         fileRef.getDownloadURL().subscribe(url => {
-          this.urlImagen = url;
+          this.urlImagen = url; //la imagen se llama url siempre
 
-          product.url=this.urlImagen
-          console.log(product)
-          this.agregarProducto(product)
+          product.url=this.urlImagen //donde se almacena
+          console.log(product) //lo mostramos para verificar que funcione
+          this.agregarProducto(product) //mostramos 
         })
 //tomo la url, la trae, y la sube
 

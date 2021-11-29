@@ -29,7 +29,7 @@ export class AgregarComponent implements OnInit {
   ngOnInit(): void {
   }
   enviarDatos() {
-    console.log(this.formulario.value);
+    console.log(this.formulario.value); //toma todos los valores y los sube
     const producto:IProductos = {
       nombre : this.formulario.value.nombre,
       descripcion: this.formulario.value.descripcion,

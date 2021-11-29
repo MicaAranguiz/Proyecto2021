@@ -2,7 +2,7 @@
 export interface IProductosId extends IProductos {
   id: string;
 }
-
+//todo tiene que ser con el nomnbre de la base de datos
 export interface IProductos {
   nombre: string;
   descripcion: string;

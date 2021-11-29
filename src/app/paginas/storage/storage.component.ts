@@ -12,9 +12,9 @@ import { Router } from '@angular/router';
 })
 export class StorageComponent implements OnInit {
 
-  formulario: FormGroup;
-  imagenSeleccionada!:File;
-  public filePath: string = "";
+  formulario: FormGroup; //tipo de formulario
+  imagenSeleccionada!:File;  //tipo de archivo
+  public filePath: string = ""; 
 
 
   constructor(private formB: FormBuilder, private storage: AngularFireStorage, private productsServices : ProductosService, private route: Router) {
@@ -40,10 +40,10 @@ export class StorageComponent implements OnInit {
   }
   guardarProducto(){
 
-    this.productsServices.subirImagen(this.imagenSeleccionada, this.formulario.value)
+    this.productsServices.subirImagen(this.imagenSeleccionada, this.formulario.value) //toma los datos que ponemos en el formulario
   }
   volveraproducto() {
-    this.route.navigateByUrl('productos')
+    this.route.navigateByUrl('productos') //cuando tocamos el boton nos redirige
  
   }
 }

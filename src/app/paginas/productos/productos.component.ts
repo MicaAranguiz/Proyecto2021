@@ -14,7 +14,7 @@ export class ProductosComponent implements OnInit {
   public logueado:boolean = false
   constructor(private productosService: ProductosService, private auth: LoginService) {
     this.auth.user.subscribe((user)=>{
-      if(user.email!=undefined){
+      if(user.email!=undefined){ //cuando se loguea, cambia el estado
         this.logueado=true
       }
       else{
@@ -24,7 +24,7 @@ export class ProductosComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    this.productosService.productos
+    this.productosService.productos //para recibir los cambios al instante
     .subscribe((respuesta) => {
       this.productos = respuesta;
       console.log(this.productos);
@@ -33,7 +33,7 @@ export class ProductosComponent implements OnInit {
   }
 
   eliminarProducto(id:string){
-    this.productosService.eliminarProducto(id);
+    this.productosService.eliminarProducto(id); //busca por id, la toma y borra el elemento
    console.log(id)
   }
 
